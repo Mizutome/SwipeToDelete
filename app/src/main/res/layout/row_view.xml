@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    >
+
+    <TextView
+        android:id="@+id/textview_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <FrameLayout
+        android:id="@+id/layout_swiped"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/button_achieved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/achieved"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:layout_gravity="start|center_vertical"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            />
+
+        <Button
+            android:id="@+id/button_undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/undo"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:layout_gravity="end|center_vertical"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            />
+    </FrameLayout>
+
+    <!-- quick and dirty divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="bottom"
+        />
+
+</FrameLayout>

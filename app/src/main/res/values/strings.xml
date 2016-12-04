@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Swipe to Delete</string>
+
+    <string name="menu_item_add_5_items">Add 5 items</string>
+
+    <string name="achieved">Achieved</string>
+    <string name="undo">Undo</string>
+
+</resources>
